@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<title>ParkBay - Find parking</title>
+</head>
+<body>
+<nav class="nav">
+  <a class="nav-brand" href="index.html"><span class="mark">P</span> ParkBay</a>
+  <div class="nav-links"></div>
+  <button class="nav-account" id="accountBtn"></button>
+</nav>
+<div class="hero">
+  <div class="hero-inner">
+    <h1>See which bays are free before you drive in.</h1>
+    <p class="lede">Live availability at PSSSF Commercial Complex, Sinza, updated from the bay sensors every few seconds.</p>
+  </div>
+</div>
+<div class="section">
+  <div class="section-head"><h2>Floors</h2><span class="count" id="lotsCount"></span></div>
+  <div class="lot-grid" id="lotGrid"></div>
+</div>
+<footer>ParkBay: PSSSF Commercial Complex, Sinza, Dar es Salaam.</footer>
+<div class="toast" id="toast"></div>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

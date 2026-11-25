@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<title>ParkBay - Log in</title>
+</head>
+<body>
+<nav class="nav">
+  <a class="nav-brand" href="login.html"><span class="mark">P</span> ParkBay</a>
+  <div class="nav-links"></div><span></span>
+</nav>
+<div class="auth-wrap">
+  <div class="auth-card">
+    <h1 id="authTitle">Welcome back</h1>
+    <div class="sub" id="authSub">Log in to see live parking availability.</div>
+    <form id="loginForm" novalidate>
+      <div id="regFields" style="display:none">
+        <div class="form-row"><label for="nameInput">Full name</label><input type="text" id="nameInput" autocomplete="name"></div>
+        <div class="form-row"><label for="phoneInput">Phone (optional)</label><input type="tel" id="phoneInput" autocomplete="tel"></div>
+      </div>
+      <div class="form-row"><label for="emailInput">Email</label><input type="email" id="emailInput" placeholder="you@example.com" autocomplete="username"></div>
+      <div class="form-row"><label for="passwordInput">Password</label><input type="password" id="passwordInput" autocomplete="current-password"></div>
+      <div class="auth-error" id="loginError"></div>
+      <button type="submit" class="auth-submit" id="submitBtn">Log in</button>
+    </form>
+    <div class="auth-foot"><span id="switchText">New driver?</span> <button type="button" class="link-btn" id="switchBtn">Create an account</button></div>
+  </div>
+</div>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

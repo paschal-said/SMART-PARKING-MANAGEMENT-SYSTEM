@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<title>ParkBay - Floor</title>
+</head>
+<body>
+<nav class="nav">
+  <a class="nav-brand" href="index.html"><span class="mark">P</span> ParkBay</a>
+  <div class="nav-links"></div>
+  <button class="nav-account" id="accountBtn"></button>
+</nav>
+<div class="page-header"><div class="page-header-inner"><h1 id="lotTitle">Floor</h1><div class="sub" id="lotWindow"></div></div></div>
+<div class="section">
+  <a class="back-link" href="index.html">&larr; Back to all floors</a>
+  <div class="bay-legend">
+    <div class="item"><span class="swatch" style="background:rgba(61,139,95,0.35); border:1.5px solid #3D8B5F;"></span> Free</div>
+    <div class="item"><span class="swatch" style="background:rgba(193,68,60,0.35); border:1.5px solid #C1443C;"></span> Taken</div>
+    <div class="item"><span class="swatch" style="border:1.5px dashed #6E7075;"></span> No sensor data</div>
+    <div class="item"><span class="swatch" style="background:#6E7075; opacity:.4;"></span> Closed</div>
+  </div>
+  <div class="bay-map" id="bayMap"></div>
+  <p class="hint">Bay reservation and payment will appear here once they are switched on.</p>
+</div>
+<footer>ParkBay: PSSSF Commercial Complex, Sinza, Dar es Salaam.</footer>
+<div class="toast" id="toast"></div>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/lot.js"></script>
+</body>
+</html>
